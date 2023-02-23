@@ -17,16 +17,18 @@
   <body>
     <header>
       <nav id="navbar">
-        <ul>
-          <li><a href="#">Charles Freeborn</a></li>
-          <li><a href="#welcome-section">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#hire">Hire Me</a></li>
+        <ul class="navbar-main">
+          <li id="brand-name">
+            <a href="#" class="nav-link">Charles Freeborn</a>
+          </li>
+          <li><a href="#welcome-section" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#blog" class="nav-link">Blog</a></li>
+          <li><a href="#hire" class="nav-link">Hire Me</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main id="main-body">
       <section id="welcome-section">
         <h1>Hi, I am Charles Freeborn</h1>
         <h2>a frontend developer and technical writer</h2>
@@ -37,30 +39,108 @@
           obcaecati ut!
         </p>
         <img
-          src="assets/images/freeborncharles.jpg"
+          src="assets/images/charles-profile-compressed.jpeg"
           alt="photo of charles Freeborn"
+          width="400"
         />
       </section>
-    
+
+      <!-- Start of project section -->
       <section id="projects">
         <h2>Selected Projects</h2>
         <!-- use grid here to seperate the items -->
         <div class="wrapper">
-           <a href=""><img src="" alt="project image" class="image-item" /></a>
-          <span class="project-tile">Project 1</span>
-          <a href=""><img src="" alt="project image" class="image-item" /></a>
-          <span class="project-tile">Project 2</span>
-          <a href=""><img src="" alt="project image" class="image-item" /></a>
-          <span class="project-tile">Project 3</span>
-          <a href=""><img src="" alt="project image" class="image-item" /></a>
-          <span class="project-tile">Project 4</span>
-          <a href=""><img src="" alt="project image" class="image-item" /></a>
-          <span class="project-tile">Project 5</span>
-          <a href=""><img src="" alt="project image" class="image-item" /></a>
-          <span class="project-tile">Project 6</span>
-        </div>
+          <a
+            href="https://www.freecodecamp.org/freeborncharles"
+            target="_blank"
+          >
+            <figure>
+              <img
+                src="/assets/images/cat-photos-compressed.png"
+                alt="project image"
+                class="image-item"
+                width="400"
+              />
+              <figcaption class="project-tile">Image Gallery App</figcaption>
+            </figure>
+          </a>
+
+          <a
+            href="https://github.com/charlesfreeborn/product-landing-page"
+            target="_blank"
+          >
+            <figure>
+              <img
+                src="/assets/images/product-landing-page-compressed.png"
+                alt="project image"
+                class="image-item"
+                width="400"
+              />
+              <figcaption>Product Landing Web App</figcaption>
+            </figure>
+          </a>
+
+          <a href="https://freeborncharles.com" target="_blank">
+            <figure>
+              <img
+                src="/assets/images/my-blog.png"
+                alt="project image"
+                class="image-item"
+                width="400"
+              />
+              <figcaption>My Blog</figcaption>
+            </figure>
+          </a>
+
+          <a
+            href="https://www.freecodecamp.org/freeborncharles"
+            target="_blank"
+          >
+            <figure>
+              <img
+                src="/assets/images/newspaper-compressed.png"
+                alt="project image"
+                class="image-item"
+                width="400"
+              />
+              <figcaption>Newspaper web app</figcaption>
+            </figure>
+          </a>
+
+          <a
+            href="https://github.com/charlesfreeborn/technical-documentation-page"
+            target="_blank"
+          >
+            <figure>
+              <img
+                src="/assets/images/technical-documentation-compressed.png"
+                alt="project image"
+                class="image-item"
+                width="400"
+              />
+              <figcaption>Technical documentation web app</figcaption>
+            </figure>
+          </a>
+
+          <a
+            href="https://github.com/charlesfreeborn/freeCodeCamp-tribute-project"
+            target="_blank"
+          >
+            <figure>
+              <img
+                src="/assets/images/tribute-page-compressed.png"
+                alt="project image"
+                class="image-item"
+                width="400"
+              />
+              <figcaption>Tribute Page</figcaption>
+            </figure>
+          </a>
         </div>
       </section>
+      <!-- End of Project Section -->
+
+      <!-- Start of Blog section -->
       <section id="blog">
         <h2>My writings across the web</h2>
         <ul>
@@ -91,6 +171,9 @@
           </li>
         </ul>
       </section>
+      <!-- End of Blog section  -->
+
+      <!-- Start of Hire Me Section -->
       <section id="hire">
         <h2>Hire me - let's work together</h2>
         <!-- use font awesome icons here -->
@@ -108,7 +191,10 @@
           ><i class="fa-brands fa-github fa-3x"></i>
         </a>
       </section>
+      <!-- End of Hire me section -->
     </main>
+
+    <!-- Footer section -->
     <footer>
       <p>
         Designed with <code><3</code> by

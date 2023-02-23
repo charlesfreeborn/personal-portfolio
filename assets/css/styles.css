@@ -1,1 +1,85 @@
+:root {
+  --primary-main-body: #bdcdd6;
+  --secondary-main-body: #eee9da;
+  --nav-footer: #6096b4;
+  --nav-items: #fff;
+  --hover-color: #eee9da;
+}
 
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  background-color: var(--primary-main-body);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#navbar {
+  background-color: var(--nav-footer);
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 2px solid var(--nav-items);
+  padding: 20px 40px;
+  font-weight: bold;
+  /* color: var(--nav-items); */
+}
+
+.navbar-main {
+  display: flex;
+  list-style-type: none;
+  gap: 2%;
+  position: relative;
+  top: 0;
+  text-decoration: none;
+  /* color: var(--nav-items); */
+}
+
+#brand-name {
+  margin-right: auto;
+}
+
+.navbar-main .nav-link {
+  color: var(--nav-items);
+  text-decoration: none;
+}
+
+.nav-link:hover,
+a:hover {
+  color: var(--hover-color);
+}
+
+#main-body {
+  width: 80%;
+  margin: 20px auto;
+}
+
+#welcome-section {
+  margin-top: 20px;
+}
+
+footer {
+  border-top: 2px solid var(--nav-items);
+  background-color: var(--nav-footer);
+  /* height: 20px; */
+  padding: 20px 40px;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+}
